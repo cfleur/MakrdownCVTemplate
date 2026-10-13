@@ -1,6 +1,8 @@
 ---
 # pandoc cv.md --template=template-cv.tex -o cv.pdf
 template: "template-cv.tex"
+# babeloptions: "spanish,es-tabla"
+babeloptions: "british"
 name: "Alan Mathison Turing"
 jobtitle: Amazing Matematician
 email: "alan.turing@bletchleypark.org.uk"

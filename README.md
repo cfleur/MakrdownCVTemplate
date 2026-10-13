@@ -44,6 +44,21 @@ To generate the PDF:
 - Edit `cv.md` with your own information
 - Tweak `template-cv.tex` to change layout, fonts, spacing, or icons
 
+### Language settings
+
+You can set your babel package options as a directive in `cv.md`.
+For example:
+```
+babeloptions: "spanish,es-tabla"
+```
+
+or
+
+```
+babeloptions: "british"
+```
+
+
 ### Formatting CV entries
 
 For right-aligned dates in each job entry, you can use the following custom command in `cv.md`:
