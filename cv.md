@@ -26,6 +26,9 @@ Philosophy of mind,
 Mathematics.
 
 # Work Experience
+- \cvjobtitle{Cryptanalyst}{Government Code and Cypher School (GC\&CS), Bletchley Park}{1939--1945}
+  - Led the **Hut 8** team deciphering **German naval Enigma**
+  - Developed the **Bombe**, an electromechanical device used to accelerate codebreaking
 - **1939 – 1945**: __Cryptanalyst__ @ Government Code and Cypher School (GC&CS), Bletchley Park
   - Led the **Hut 8** team deciphering **German naval Enigma**
   - Developed the **Bombe**, an electromechanical device used to accelerate codebreaking
