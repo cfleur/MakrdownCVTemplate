@@ -11,6 +11,8 @@ website: "www.turing.org.uk"
 github: "am-turing"
 linkedin: "alanturing"
 address: "Wilmslow, Cheshire, England"
+thisrepolink: "https://github.com/epaubert/MakrdownCVTemplate"
+thisreponame: "MakrdownCVTemplate"
 ---
 
 # Professional Profile

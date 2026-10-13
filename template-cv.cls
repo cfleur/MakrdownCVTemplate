@@ -5,6 +5,14 @@
 \RequirePackage{parskip}
 \RequirePackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
 \RequirePackage{fontawesome} % Import FontAwesome for icons
+\RequirePackage{fancyhdr}
+\RequirePackage{datetime}
+
+\newdateformat{simpledate}{\THEDAY.\THEMONTH.\THEYEAR}
+
+\pagestyle{fancy}
+\fancyhead{} % clears header formatting
+\renewcommand{\headrulewidth}{0pt} %removes the horizontal rule that fancyhdr normally draws
 
 \geometry{margin=2.0cm}
 
@@ -36,4 +44,12 @@
 
 \newcommand{\cvjobtitle}[3]{%
   \noindent\textbf{#1} @ #2\hfill\textbf{#3}\par
+}
+
+\newcommand{\cvfooter}[2]{%
+  \cfoot{\makebox[\textwidth][c]{%
+    \footnotesize
+    Page \thepage\ \textbar\ Updated \simpledate\today\
+    \textbar\ Made with \href{#1}{#2}%
+  }}
 }

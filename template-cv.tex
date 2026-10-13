@@ -4,6 +4,12 @@
 % Document starts
 \begin{document}
 
+% use fancy on first page for correct footer formatting
+\thispagestyle{fancy}
+
+\cvfooter{$thisrepolink$}{$thisreponame$}
+
+
 % Title and Contact
 \begin{center}
     \begin{minipage}[t]{0.6\textwidth}
@@ -27,8 +33,5 @@
 
 % The main body of the CV from Markdown
 $body$
-
-% TODO: Encontrar una manera de hacer esto más genérico
-% \footnotetext{\today}
 
 \end{document}
