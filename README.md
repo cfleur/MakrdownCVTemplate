@@ -98,3 +98,10 @@ Feel free to use, adapt, and share it for personal or professional use.
 
 Have suggestions? Want to improve the template?  
 Pull requests and issues are welcome.
+
+If you would like to contribute to the template and use the repo for your own CV we recommend this setup:
+- use the `private/` folder for your own content, like `cv.md`, `cv.pdf`
+- use `pandoc private/cv.md --template=template-cv.tex -o private/cv.pdf` to compile your own CV
+- if you want to tweak for your own needs `template-cv.tex`, also put it in the `private` folder and symlink the `.cls` file there as well
+
+This keeps the template files free from your personal content while developing.
