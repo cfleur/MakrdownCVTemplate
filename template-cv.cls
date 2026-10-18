@@ -13,18 +13,21 @@
 \def\@cvpdftitle{Curriculum Vitae} % default title for pdf document
 \newcommand{\cvpdftitle}[1]{\gdef\@cvpdftitle{#1}}
 
+% configure date
 \newdateformat{simpledate}{\THEDAY.\THEMONTH.\THEYEAR}
 
+% configure header and footer
 \pagestyle{fancy}
 \fancyhead{} % clears header formatting
 \renewcommand{\headrulewidth}{0pt} %removes the horizontal rule that fancyhdr normally draws
 
+% configure page
 \geometry{margin=2.0cm}
 
-\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} % Fix for tightlist error
+ % Fix for tightlist error
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % Adjust section formatting
-
 \titleformat{\section}
   {\Large\bfseries\centering} % Tamaño más grande y negrita
   {}{0em}{}[\titlerule] % línea debajo
@@ -38,6 +41,9 @@
   {}{0em}{}
 
 % Custom commands for CV
+\newcommand{\cvname}[1]{\huge \textbf{#1}}
+\newcommand{\cvtitle}[1]{\LARGE \textbf{#1}}
+
 % contact style
 \newcommand{\cvcontact}[1]{#1}
 
@@ -50,10 +56,13 @@
 
 \newcommand{\cvitem}[2]{\textbf{#1:} #2}
 
-\newcommand{\cvjobtitle}[3]{%
-  \noindent\textbf{#1} @ #2\hfill\textbf{#3}\par
+% item titles with left aligned dates
+% use this in cv.md to enter job/education titles
+\newcommand{\cvitemleftdate}[3]{%
+  \noindent \textbf{#1} @ #2\hfill\textbf{#3} \par
 }
 
+% custom footer
 \newcommand{\cvfooter}[2]{%
   \cfoot{\makebox[\textwidth][c]{%
     \footnotesize
