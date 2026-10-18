@@ -7,6 +7,11 @@
 \RequirePackage{fontawesome} % Import FontAwesome for icons
 \RequirePackage{fancyhdr}
 \RequirePackage{datetime}
+\RequirePackage{hyperref}
+
+% configure pdf document title
+\def\@cvpdftitle{Curriculum Vitae} % default title for pdf document
+\newcommand{\cvpdftitle}[1]{\gdef\@cvpdftitle{#1}}
 
 \newdateformat{simpledate}{\THEDAY.\THEMONTH.\THEYEAR}
 
@@ -33,6 +38,9 @@
   {}{0em}{}
 
 % Custom commands for CV
+% contact style
+\newcommand{\cvcontact}[1]{#1}
+
 \newcommand{\cvsection}[1]{\section*{#1}}
 \newcommand{\cvsubsection}[1]{\subsection*{#1}}
 \newcommand{\cvsubsubsection}[1]{\subsubsection*{#1}}
@@ -52,4 +60,13 @@
     Page \thepage\ \textbar\ Updated \simpledate\today\
     \textbar\ Made with \href{#1}{#2}%
   }}
+}
+
+% set up document properties (links and pdf metadata)
+\AtBeginDocument{%
+    \hypersetup{%
+        colorlinks=true,%
+        urlcolor=blue,%
+        pdftitle={\@cvpdftitle}%
+    }%
 }

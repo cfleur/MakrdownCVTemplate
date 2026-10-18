@@ -7,12 +7,13 @@ name: "Alan Mathison Turing"
 jobtitle: Amazing Matematician
 email: "alan.turing@bletchleypark.org.uk"
 phone: "+44 1234 567890"
-website: "www.turing.org.uk"
-github: "am-turing"
-linkedin: "alanturing"
-address: "Wilmslow, Cheshire, England"
+# website: "www.turing.org.uk" # optional
+github: "am-turing" # optional
+linkedin: "alanturing" # optional
+address: "Wilmslow, Cheshire, England" # optional
 thisrepolink: "https://github.com/epaubert/MakrdownCVTemplate"
 thisreponame: "MakrdownCVTemplate"
+# pdftitle: "Alan's CV"
 ---
 
 # Professional Profile

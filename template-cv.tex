@@ -1,6 +1,10 @@
 \documentclass{template-cv}
 \usepackage[$babeloptions$]{babel}
 
+$if(pdftitle)$
+    \cvpdftitle{$pdftitle$}
+$endif$
+
 % Document starts
 \begin{document}
 
@@ -20,12 +24,36 @@
     %\vspace{0.5cm} % Add some space before sections
     \begin{minipage}[t]{0.4\textwidth}
         \raggedleft
-        \href{tel:$phone$}{$phone$}\\ %\faPhone \hspace{0.5cm}
-        \href{mailto:$email$}{$email$}\\ % \faEnvelope \hspace{0.5cm}
-        %\href{https://$website$}{$website$\} \\ % \faGlobe \hspace{0.5cm}
-        \href{https://www.linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}\\ % \faLinkedin \hspace{0.5cm}
-        \href{https://www.github.com/$github$}{github.com/$github$}\\ % \faGithub
-        $address$ \\ 
+        \vspace{-\baselineskip} % Pulls the first line up to match the name's baseline
+        \cvcontact{\href{tel:$phone$}{%
+            $phone$
+            % \faPhone  % comment this line for no icon
+        }} \\
+        \cvcontact{\href{mailto:$email$}{%
+            $email$
+            % \faEnvelope % comment this line for no icon
+        }} \\
+        $if(website)$
+            \cvcontact{\href{https://$website$}{%
+                $website$
+                % \faGlobe % comment this line for no icon
+            }} \\
+        $endif$
+        $if(linkedin)$
+            \cvcontact{\href{https://www.linkedin.com/in/$linkedin$}{%
+                linkedin.com/in/$linkedin$
+                % \faLinkedin % comment this line for no icon
+            }} \\
+        $endif$
+        $if(github)$
+            \cvcontact{\href{https://www.github.com/$github$}{%
+                github.com/$github$
+                % \faGithub  % comment this line for no icon
+            }} \\
+        $endif$
+        $if(address)$
+            \cvcontact{$address$} \\
+        $endif$
     \end{minipage}
 \end{center}
 
