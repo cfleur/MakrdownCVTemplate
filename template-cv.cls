@@ -7,6 +7,8 @@
 \RequirePackage{fontawesome} % Import FontAwesome for icons
 \RequirePackage{fancyhdr}
 \RequirePackage{datetime}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{hyperref}
 
 % configure pdf document title
